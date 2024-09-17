@@ -1,12 +1,11 @@
 import '@styles/globals.css';
-import { Children } from 'react';
 
 export const metadata = {
     title: "Promptopia",
     description: "Discover and share AI Prompts"
 }
 
-const RootLayout = () => {
+const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
         <body>
@@ -15,7 +14,7 @@ const RootLayout = () => {
             </div>
 
             <main className='app'>
-                {Children}
+                {children}
             </main>
         </body>
     </html>
